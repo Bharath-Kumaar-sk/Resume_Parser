@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"python.defaultInterpreterPath": "C:\\Users\\forgo\\OneDrive\\Desktop\\Resume parser\\Resume_Parser\\myenv\\Scripts\\python.exe"
+	}
+}
