@@ -11,9 +11,9 @@ with fitz.open(fname) as doc:
     sections = {}
     font_dict= {}
     size_dict = {}
-    current_font = None
+    unique_font = set()
+    unique_size = set()
     current_section = None
-    current_size = None
 
     for page in doc:
         page_width = page.rect.width
@@ -34,13 +34,11 @@ with fitz.open(fname) as doc:
                         line_text += span["text"] #building line text
                         size = span["size"]
                         if max_size < size: #max size in each line
-                             max_size = size
+                            max_size = size
+                            span_font = span["font"]
                     
                     #Now a full line is created
                     span_x0 = span["bbox"][0] #to check left column and right column
-                    for Chksize in line_text:
-                          if max_size == line_text["size"]:
-                                span_font = line_text["font"] #to get the font of largest size
                     #checking for left and right
                     if span_x0 < midpoint:
                         column = "left"
@@ -53,8 +51,6 @@ with fitz.open(fname) as doc:
                     for keyword in section_keyword:
                         if keyword in upper_text:   #checking via section_keywords using flag
                                 current_section = keyword
-                                current_font = span_font
-                                current_size = max_size
                                 is_heading = True
                                 break
                                 
@@ -69,13 +65,19 @@ with fitz.open(fname) as doc:
                         
                     if current_section not in sections:
                                 sections[current_section] = []
-                                font_dict[current_font] = []
-                                size_dict[current_size] = []
+                    if span_font not in font_dict:
+                                font_dict[span_font] = []
+                    font_dict[span_font].append(span_font)
+                    unique_font.add(span_font)
+                   
+                    if max_size not in size_dict:
+                                size_dict[max_size] = []
+                    size_dict[max_size].append(max_size)
+                    unique_size.add(max_size)
 
                     if not is_heading:
                             sections[current_section].append(line_text) #to append text regardless of section
-                            font_dict[current_font].append(span_font)
-                            size_dict[current_size].append(max_size)
+                           
 
 print("Output\n")
 for section, text in sections.items():
@@ -84,3 +86,8 @@ for section, text in sections.items():
     for t in text:
         print(t)
     print("---"*20)
+
+print("\nfont")
+for fonts in unique_font:
+      print(f"font: {fonts}")
+
