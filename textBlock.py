@@ -1,47 +1,67 @@
-import sys, pathlib
+import sys
 import fitz
 
 fname = sys.argv[1]
 
+section_keyword = ["EDUCATION", "EXPERIENCE", "SKILLS", "PROJECTS", "COURSEWORK", "LINKS"]
+
+
 with fitz.open(fname) as doc:
 
+    sections = {}
+    current_section = None
+
     for page in doc:
-        Findblocks = page.get_text("blocks")
-        text_dict = page.get_text("dict")
-
-        left_column = []
-        right_column = []
-
         page_width = page.rect.width
         midpoint = page_width/2
 
-        sorted_blocks = sorted(Findblocks, key=lambda b: (b[1], b[0])) #sorting the block based on b[1] - y0 (top)
-        #b[1] and b[0] works because OUT PUT OF FindBlocks is a tuple     and b[0] - x[0] - left
-        for block in text_dict["blocks"]: #provides spans - basically lines with same font, size - or simply a line - section headers, heading
-            if block["type"] == 0: 
+        text_dict = page.get_text("dict")
+        sorted_blocks = sorted(text_dict["blocks"], key=lambda b:(b["bbox"][1], b["bbox"][0]))
+
+        for block in sorted_blocks:
+            if block["type"] == 0:
                 for line in block["lines"]:
                     for span in line["spans"]:
-                        text = span["text"].strip()
-                        size = span["size"]
+                        text = span["text"]
+                        #getting details
+                        if not text:
+                            continue
+                        span_x0 = span["bbox"][0]
                         font = span["font"]
-                        print(f"Text: {text}")
-                        print(f"Font: {font}, Size: {size}")
-                        print("-" * 30)
-        
-        for b in sorted_blocks: #provides block - grouped together - paragrpahs, section headers, heading
-            text = b[4].strip()
-            if text:
-                x0, y0, x1, y1 = b[0], b[1], b[2], b[3]
-                if x0 < midpoint:
-                    print("Block is left column")
-                    print(f"coordinates: {x0:.1f}, {y0:.1f}, {x1:.1f}, {y1:.1f}")
-                    print(text)
-                    print("-"*30)
-                if x0 > midpoint:
-                    print("Block is right column")
-                    print(f"coordinates: {x0:.1f}, {y0:.1f}, {x1:.1f}, {y1:.1f}")
-                    print(text)
-                    print("-"*30)
+                        size = span["size"]
+                        #checking for left and right
+                        if span_x0 < midpoint:
+                            column = "left"
+                        elif span_x0 >= midpoint:
+                            column = "right" 
+                        #Now checking for keyword
+                        upper_text = text.upper()
+                        is_heading = False
+                        for keyword in section_keyword:
+                            if keyword in upper_text:   #checking via section_keywords using flag
+                                current_section = keyword
+                                is_heading = True
+                                break
+                                
+                            #checking via font size and style
+                        if current_section == None and not is_heading:
+                            if ("Bold" in font and size > 12):
+                                current_section = "Heading"
+                            elif ("Bold" in font and size < 12):
+                                current_section = "section heading"
+                            elif (not "Bold" in font and size < 12):
+                                current_section = "Body"
+                        
+                        if current_section not in sections:
+                                sections[current_section] = []
 
+                        if not is_heading:
+                            sections[current_section].append(text) #to append text regardless of section
 
-    #Use spans to get the text, font details on sorting at the same time
+print("Output\n")
+for section, text in sections.items():
+    print(f"section: {section}")
+    print("\nNOW TEXT\n")
+    for t in text:
+        print(t)
+    print("---"*20)
