@@ -2,32 +2,63 @@ import sys
 import fitz
 
 fname = sys.argv[1]
+section_keyword = ["EDUCATION", "EXPERIENCE", "SKILLS", "PROJECTS","COURSEOWRK", "LINKS"]
 
 with fitz.open(fname) as doc:
-    
+
+    current_section = None
+    sections = {}
+    para_font = {}
+    para_size = {}
+    unique_font = set()
+    unique_size = set()
+
     for page in doc:
         page_width = page.rect.width
         midpoint = page_width/2
-
         text_dict = page.get_text("dict")
-        sorted_block = sorted(text_dict["blocks"], key=lambda b:(b["bbox"][1], b["bbox"][0]))
 
-        for block in sorted_block: #inside block
-            if block["type"] == 0: #text
-                x0, y0, x1, y1 = block["bbox"][0], block["bbox"][1], block["bbox"][2], block["bbox"][3]
-                #next step --> sort left - right using the span instead of block
-                for line in block["lines"]: #inside line
-                    for span in line["spans"]: #inside span
-                        text = span["text"]
-                        if text:
-                            size = span["size"]
+        sorted_blocks = sorted(text_dict["blocks"], key=lambda b:(b["bbox"][1], b["bbox"][0]))
+
+        for block in sorted_blocks:
+            if block["type"] == 0:
+                prev_y1 = None
+                for line in block["lines"]:
+                    line_text = ""
+                    max_size = 0
+                    span_font = ""
+                    threshold = 10
+                    
+                    for span in line["spans"]:
+                        line_text += span["text"]
+                        size = span["size"]
+                        if max_size < size:
+                            max_size = size
                             font = span["font"]
-                            if x0 < midpoint:
-                                print(f"left column -- {x0:.1f}, {y0:.1f}, {x1:.1f}, {y1:.1f}")
-                                print(f"size = {size} font = {font}")
-                                print("\ntext: "+text)
-                            elif x0 >= midpoint:
-                                print(f"right column -- {x0:.1f}, {y0:.1f}, {x1:.1f}, {y1:.1f}")
-                                print(f"size = {size} font = {font}")
-                                print("\ntext: "+text)
+                        
+                    line_y0 = line["bbox"][1] #calculating y0 y1 outside of span
+                    line_y1 = line["bbox"][3] 
+                    is_heading = False
+
+                    upper_text = line_text.upper()
+                    for keyword in section_keyword:
+                         if keyword in upper_text:
+                              current_section = keyword
+                              is_heading = True
+                              break
+                    
+                    
+
+
+                    if prev_y1 == None:
+                            paragraph_lines = []
+                    elif line_y0 - prev_y1 < threshold:
+                         paragraph_lines.append(line_text)
+                    else:
+                         paragraph_lines = []
+
+                    prev_y1 = line_y1
+
+
+
 

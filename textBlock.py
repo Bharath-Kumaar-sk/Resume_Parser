@@ -62,7 +62,7 @@ with fitz.open(fname) as doc:
                                 current_section = "section heading"
                         elif (not "Bold" in span_font and size < 12):
                                 current_section = "Body"
-                        
+                    
                     if current_section not in sections:
                                 sections[current_section] = []
                     if span_font not in font_dict:
@@ -78,7 +78,7 @@ with fitz.open(fname) as doc:
                     if not is_heading:
                             sections[current_section].append(line_text) #to append text regardless of section
                            
-
+                    current_section = None
 print("Output\n")
 for section, text in sections.items():
     print(f"section: {section}")
