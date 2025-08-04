@@ -47,16 +47,24 @@ with fitz.open(fname) as doc:
                               is_heading = True
                               break
                     
-                    
-
-
-                    if prev_y1 == None:
+                    if current_section == None and not is_heading:
+                         if ("Bold" in span_font and max_size > 15):
+                              current_section = "header"
+                         elif ("Bold" in span_font and max_size < 15):
+                              current_section = "Section heading"
+                         elif (not "Bold" in span_font and max_size < 15):
+                              current_section = "Body"
+                            
+                    if current_section not in sections:
+                         sections[current_section] = []
+                         if prev_y1 == None:
                             paragraph_lines = []
-                    elif line_y0 - prev_y1 < threshold:
-                         paragraph_lines.append(line_text)
-                    else:
-                         paragraph_lines = []
-
+                         elif line_y0 - prev_y1 < threshold:
+                            paragraph_lines.append(line_text)
+                         else:
+                            paragraph_lines = []
+                         sections[current_section].append(line_text)
+        
                     prev_y1 = line_y1
 
 
