@@ -4,7 +4,7 @@
 ---
 
 ````markdown
-# Resume Parser — Rule-Based PDF Extractor (parser_v12)
+# Resume Parser — Rule-Based PDF Extractor (FinalParser)
 
 A deterministic, rule-based resume parser that extracts structured information from PDF resumes using spatial layout analysis, lexical cues, and robust date heuristics.
 
@@ -173,7 +173,7 @@ The parser outputs a structured JSON file with the following schema:
 
 ## Configuration & Tuning
 
-Key constants are defined at the top of `parser_v12.py`:
+Key constants are defined at the top of `FinalParser.py`:
 
 * `DEBUG` — enable detailed parsing logs
 * `FULL_WIDTH_RATIO` — header width threshold (default: `0.6`)
