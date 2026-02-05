@@ -1,0 +1,14 @@
+{
+    "metadata": {
+        "filename": "Table.pdf"
+    },
+    "entities": {
+        "email": null,
+        "phone": null,
+        "links": []
+    },
+    "sections": {
+        "CONTACT_INFO": []
+    },
+    "tables": []
+}

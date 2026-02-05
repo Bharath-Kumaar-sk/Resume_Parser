@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "filename": "Sample2.pdf",
+        "name": "XYZ"
+    },
+    "entities": {
+        "email": null,
+        "phone": null,
+        "links": []
+    },
+    "sections": {
+        "CONTACT_INFO": []
+    },
+    "tables": [
+        {
+            "page": 1,
+            "data": [
+                [
+                    ""
+                ],
+                [
+                    "XYZ\nMarketing Manager\nABOUT ME\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\nmagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea\ncommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\npariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\nlaborum\nEDUCATION WORK EXPERIENCE\nBORCELLE UNIVERSITY AROWWAI INDUSTRIES\nLorem ipsum dolor Office Marketing NOW-2024\n2020 - 2023\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\nBORCELLE UNIVERSITY eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\nLorem ipsum dolor ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\naliquip ex ea commodo consequat.\n2020 - 2023\nLorem ipsum dolor sit amet, consectetur adipiscing elit\nBORCELLE UNIVERSITY Lorem ipsum dolor sit amet, consectetur adipiscing elit\nLorem ipsum dolor\n2020 - 2023 GINYARD INTERNATIONAL CO.\nOffice Marketing 2023-2022\nSKILLS\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\neiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\nMarket Analysis ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\naliquip ex ea commodo consequat.\nSales\nLorem ipsum dolor sit amet, consectetur adipiscing elit\nTechniques\nLorem ipsum dolor sit amet, consectetur adipiscing elit\nDevelopment\nManagement INGOUDE COMPANY\nOffice Marketing 2021-2020\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\nEXPERTISE eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\nad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\naliquip ex ea commodo consequat.\nStrategic Planning\nLorem ipsum dolor sit amet, consectetur adipiscing elit\nCommunication\nLorem ipsum dolor sit amet, consectetur adipiscing elit\nData Analysis\nDigital Marketing\nCONTACT REFERENCE\n+123-456-7890 Greta Mae Evans Lars Peeters Juliana Silva\nBorcelle University Borcelle University Borcelle University\n123 Anywhere St., Any City\n+123-456-7890 +123-456-7890 +123-456-7890\nhello@reallygreatsite.com\nwww.reallygreatsite.com www.reallygreatsite.com www.reallygreatsite.com"
+                ],
+                [
+                    ""
+                ]
+            ]
+        },
+        {
+            "page": 1,
+            "data": [
+                [
+                    "BORCELLE UNIVERSITY\nLorem ipsum dolor\n2020 - 2023\nBORCELLE UNIVERSITY\nLorem ipsum dolor\n2020 - 2023\nBORCELLE UNIVERSITY\nLorem ipsum dolor\n2020 - 2023"
+                ],
+                [
+                    "SKILLS\nMarket Analysis\nSales\nTechniques\nDevelopment\nManagement"
+                ],
+                [
+                    "EXPERTISE\nStrategic Planning\nCommunication\nData Analysis\nDigital Marketing"
+                ]
+            ]
+        },
+        {
+            "page": 1,
+            "data": [
+                [
+                    ""
+                ],
+                [
+                    ""
+                ]
+            ]
+        },
+        {
+            "page": 1,
+            "data": [
+                [
+                    ""
+                ],
+                [
+                    ""
+                ]
+            ]
+        },
+        {
+            "page": 1,
+            "data": [
+                [
+                    ""
+                ],
+                [
+                    ""
+                ]
+            ]
+        }
+    ]
+}

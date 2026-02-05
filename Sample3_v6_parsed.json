@@ -1,0 +1,101 @@
+{
+    "metadata": {
+        "filename": "samples/Sample3.pdf",
+        "name": "ARMSTRONG"
+    },
+    "entities": {
+        "email": "hello@reallygreatsite.com",
+        "phone": "123-456-7890",
+        "links": [
+            "www.reallygreatsite.com"
+        ]
+    },
+    "sections": {
+        "EXPERIENCE": [
+            {
+                "header": "FMCG Sales Agent | Timmerman Industries | Timmerman Industries | June 2018 to December 2020",
+                "details": []
+            },
+            {
+                "header": "June 2017 to December 2018",
+                "details": [
+                    "Built relationships with clients to maintain sales goals and create",
+                    "Prospected and qualified leads through cold calling, email",
+                    "campaigns, and networking events.",
+                    "Increased sales by 20% by implementing effective upselling and",
+                    "cross-selling strategies.",
+                    "Maintained up-to-date knowledge of product features and",
+                    "benefits to provide accurate information to clients.",
+                    "Visited corporate client offices to offer latest products"
+                ]
+            },
+            {
+                "header": "new opportunities | Senior Sales Representative | Timmerman Industries | January 2021 to Present",
+                "details": [
+                    "Developed and executed sales strategies, resulting in a 25%",
+                    "increase in annual revenue. Managed a portfolio of 50+ clients,",
+                    "achieving a 95% customer retention rate.",
+                    "Conducted market research to identify new business",
+                    "opportunities and target prospects."
+                ]
+            }
+        ],
+        "EDUCATION": [
+            {
+                "header": "Bachelor of Business Management | Bachelor of Business Management | Wardiere University | Wardiere University | 2016 - 2020",
+                "details": []
+            },
+            {
+                "header": "2020 - 2023",
+                "details": []
+            }
+        ],
+        "CONTACT": [
+            "123-456-7890",
+            "hello@reallygreatsite.com",
+            "www.reallygreatsite.com"
+        ],
+        "UNLABELED": [
+            "I am a Sales Representative is a professional who initializes and",
+            "manages relationships with customers. They serve as their point",
+            "of contact and lead from initial outreach through the making of",
+            "the final purchase by them or someone in their household.",
+            "ARMSTRONG",
+            "Sales Representative"
+        ],
+        "SKILLS": [
+            "Sales Agent",
+            "Client Acquisition",
+            "B2B Sales",
+            "Negotiation",
+            "Relationship Management",
+            "Market Analysis",
+            "Sales Strategies",
+            "Negotiation Skills",
+            "Problem-Solving",
+            "Time Management",
+            "Presentation Skills",
+            "Networking",
+            "Market Research",
+            "Team Collaboration"
+        ],
+        "LANGUAGE": [
+            "English",
+            "Germany (basic)",
+            "Bailey Dupont",
+            "Phone:",
+            "Email :",
+            "Wardiere Inc. / CEO"
+        ],
+        "REFERENCES": [
+            "123-456-7890",
+            "123-456-7890",
+            "hello@reallygreatsite.com",
+            "hello@reallygreatsite.com",
+            "Harumi Kobayashi",
+            "Phone:",
+            "Email :",
+            "Wardiere Inc. / CEO"
+        ]
+    }
+}

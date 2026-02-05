@@ -1,0 +1,97 @@
+{
+    "metadata": {
+        "filename": "Sample3.pdf",
+        "name": "ARMSTRONG"
+    },
+    "entities": {
+        "email": "hello@reallygreatsite.com",
+        "phone": "123-456-7890",
+        "links": [
+            "www.reallygreatsite.com"
+        ]
+    },
+    "sections": {
+        "UNLABELED": [
+            "Germany (basic)",
+            "123-456-7890",
+            "123-456-7890",
+            "ARMSTRONG",
+            "Sales Representative"
+        ],
+        "CONTACT": [
+            "Profile",
+            "I am a Sales Representative is a professional who initializes and",
+            "manages relationships with customers. They serve as their point",
+            "of contact and lead from initial outreach through the making of",
+            "the final purchase by them or someone in their household.",
+            "123-456-7890",
+            "hello@reallygreatsite.com",
+            "www.reallygreatsite.com"
+        ],
+        "EDUCATION": [],
+        "EXPERIENCE": [
+            {
+                "header": "Bachelor of Business Management | Senior Sales Representative",
+                "details": []
+            },
+            {
+                "header": "Timmerman Industries | Wardiere University | 2016 - 2020",
+                "details": []
+            },
+            {
+                "header": "January 2021 to Present",
+                "details": [
+                    "increase in annual revenue. Managed a portfolio of 50+ clients,",
+                    "Developed and executed sales strategies, resulting in a 25%"
+                ]
+            },
+            {
+                "header": "achieving a 95% customer retention rate. | Conducted market research to identify new business | opportunities and target prospects. | Bachelor of Business Management | Wardiere University | 2020 - 2023",
+                "details": []
+            }
+        ],
+        "SKILLS": [
+            "FMCG Sales Agent",
+            "Timmerman Industries",
+            "Client Acquisition",
+            "June 2018 to December 2020",
+            "B2B Sales",
+            "Prospected and qualified leads through cold calling, email",
+            "campaigns, and networking events.",
+            "Increased sales by 20% by implementing effective upselling and",
+            "cross-selling strategies.",
+            "Maintained up-to-date knowledge of product features and",
+            "benefits to provide accurate information to clients.",
+            "Negotiation",
+            "Relationship Management",
+            "Market Analysis",
+            "Sales Strategies",
+            "Negotiation Skills",
+            "Problem-Solving",
+            "Sales Agent",
+            "Timmerman Industries",
+            "Time Management",
+            "June 2017 to December 2018",
+            "Presentation Skills",
+            "Networking",
+            "Visited corporate client offices to offer latest products",
+            "Built relationships with clients to maintain sales goals and create",
+            "new opportunities",
+            "Market Research",
+            "Team Collaboration",
+            "Language",
+            "References",
+            "Bailey Dupont",
+            "Harumi Kobayashi",
+            "English",
+            "Wardiere Inc. / CEO",
+            "Wardiere Inc. / CEO",
+            "Phone:",
+            "Phone:",
+            "Email :",
+            "Email :",
+            "hello@reallygreatsite.com",
+            "hello@reallygreatsite.com"
+        ]
+    }
+}

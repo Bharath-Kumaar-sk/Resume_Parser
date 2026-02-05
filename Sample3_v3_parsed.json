@@ -1,0 +1,57 @@
+{
+    "metadata": {
+        "filename": "Sample3.pdf",
+        "name": "ARMSTRONG"
+    },
+    "entities": {
+        "email": null,
+        "phone": null,
+        "links": []
+    },
+    "sections": {
+        "CONTACT_INFO": []
+    },
+    "tables": [
+        {
+            "page": 1,
+            "data": [
+                [
+                    "ARMSTRONG\nSales Representative",
+                    null
+                ],
+                [
+                    "Contact",
+                    "Profile"
+                ],
+                [
+                    "123-456-7890\nhello@reallygreatsite.com\nwww.reallygreatsite.com",
+                    "I am a Sales Representative is a professional who initializes and\nmanages relationships with customers. They serve as their point\nof contact and lead from initial outreach through the making of\nthe final purchase by them or someone in their household."
+                ],
+                [
+                    "Education",
+                    "Experience"
+                ],
+                [
+                    "Bachelor of Business Management\nWardiere University\n2016 - 2020\nBachelor of Business Management\nWardiere University\n2020 - 2023",
+                    "Senior Sales Representative\nTimmerman Industries\nJanuary 2021 to Present\nDeveloped and executed sales strategies, resulting in a 25%\nincrease in annual revenue. Managed a portfolio of 50+ clients,\nachieving a 95% customer retention rate.\nConducted market research to identify new business\nopportunities and target prospects.\nFMCG Sales Agent\nTimmerman Industries\nJune 2018 to December 2020\nProspected and qualified leads through cold calling, email\ncampaigns, and networking events.\nIncreased sales by 20% by implementing effective upselling and\ncross-selling strategies.\nMaintained up-to-date knowledge of product features and\nbenefits to provide accurate information to clients.\nSales Agent\nTimmerman Industries\nJune 2017 to December 2018\nVisited corporate client offices to offer latest products\nBuilt relationships with clients to maintain sales goals and create\nnew opportunities"
+                ],
+                [
+                    "Skills",
+                    null
+                ],
+                [
+                    "Client Acquisition\nB2B Sales\nNegotiation\nRelationship Management\nMarket Analysis\nSales Strategies\nNegotiation Skills\nProblem-Solving\nTime Management\nPresentation Skills\nNetworking\nMarket Research\nTeam Collaboration",
+                    null
+                ],
+                [
+                    "Language",
+                    "References"
+                ],
+                [
+                    "English\nGermany (basic)",
+                    "Bailey Dupont Harumi Kobayashi\nWardiere Inc. / CEO Wardiere Inc. / CEO\nPhone: 123-456-7890 Phone: 123-456-7890\nEmail : hello@reallygreatsite.com Email :hello@reallygreatsite.com"
+                ]
+            ]
+        }
+    ]
+}

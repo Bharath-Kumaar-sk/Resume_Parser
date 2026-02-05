@@ -1,0 +1,98 @@
+{
+    "metadata": {
+        "filename": "Sample2.pdf",
+        "name": "XYZ"
+    },
+    "entities": {
+        "email": "hello@reallygreatsite.com",
+        "phone": "123-456-7890",
+        "links": [
+            "www.reallygreatsite.com",
+            "www.reallygreatsite.com",
+            "www.reallygreatsite.com"
+        ]
+    },
+    "sections": {
+        "UNLABELED": [
+            "XYZ",
+            "Marketing Manager"
+        ],
+        "ABOUT ME": [],
+        "EDUCATION": [],
+        "WORK EXPERIENCE": [
+            {
+                "header": "BORCELLE UNIVERSITY | AROWWAI INDUSTRIES | Lorem ipsum dolor | 2020 - 2023",
+                "details": []
+            },
+            {
+                "header": "BORCELLE UNIVERSITY | Lorem ipsum dolor | 2020 - 2023",
+                "details": []
+            },
+            {
+                "header": "BORCELLE UNIVERSITY | Lorem ipsum dolor | GINYARD INTERNATIONAL CO. | 2020 - 2023",
+                "details": []
+            }
+        ],
+        "SKILLS": [
+            "Market Analysis",
+            "Sales",
+            "Techniques",
+            "Development",
+            "INGOUDE COMPANY",
+            "Management"
+        ],
+        "EXPERTISE": [
+            "Strategic Planning",
+            "Communication",
+            "Data Analysis",
+            "Digital Marketing"
+        ],
+        "REFERENCE": [],
+        "CONTACT": [
+            "+123-456-7890",
+            "123 Anywhere St., Any City",
+            "hello@reallygreatsite.com",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
+            "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla",
+            "pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est",
+            "laborum",
+            "Office Marketing",
+            "NOW-2024",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+            "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
+            "ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "aliquip ex ea commodo consequat.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Office Marketing",
+            "2023-2022",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+            "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
+            "ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "aliquip ex ea commodo consequat.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Office Marketing",
+            "2021-2020",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+            "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim",
+            "ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+            "aliquip ex ea commodo consequat.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "Greta Mae Evans",
+            "Lars Peeters",
+            "Juliana Silva",
+            "Borcelle University",
+            "Borcelle University",
+            "Borcelle University",
+            "+123-456-7890",
+            "+123-456-7890",
+            "+123-456-7890",
+            "www.reallygreatsite.com",
+            "www.reallygreatsite.com",
+            "www.reallygreatsite.com"
+        ]
+    }
+}
