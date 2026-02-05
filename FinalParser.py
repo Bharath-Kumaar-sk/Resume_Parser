@@ -147,7 +147,7 @@ def structure_experience_section(lines):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python parser_v12.py <resume.pdf>")
+        print("Usage: python FinalParser.py <resume.pdf>")
         sys.exit(1)
 
     fname = sys.argv[1]

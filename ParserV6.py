@@ -93,7 +93,7 @@ def structure_experience_section(experience_list):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python parser_v8.py <path_to_resume.pdf>")
+        print("Usage: python ParserV6.py <path_to_resume.pdf>")
         sys.exit(1)
 
     fname = sys.argv[1]

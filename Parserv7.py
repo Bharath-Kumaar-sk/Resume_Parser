@@ -107,7 +107,7 @@ def get_column_type(x0, x1, midpoint):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python parser_v11.py <path_to_resume.pdf>")
+        print("Usage: python ParserV7.py <path_to_resume.pdf>")
         sys.exit(1)
 
     fname = sys.argv[1]
