@@ -1,5 +1,5 @@
-Below is the **final, paste-ready `README.md`**.
-You can copy this **as-is** into your repository root.
+**`README.md`**.
+
 
 ---
 
